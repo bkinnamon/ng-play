@@ -1,0 +1,21 @@
+@use '../colors';
+
+.header {
+    background: colors.$red;
+    display: flex;
+    padding: 1rem;
+
+    &__brand {
+        font-family: 'Press Start 2P';
+
+        a {
+            color: colors.$white;
+            text-decoration: none;
+        }
+    }
+}
+
+.main {
+    max-width: 900px;
+    margin: 1rem auto;
+}

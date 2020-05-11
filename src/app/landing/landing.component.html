@@ -1,0 +1,13 @@
+<h2>Welcome! Let's Play!</h2>
+<p>Welcome to Let's Play, a place to enjoy small, quick games with friends. Create or join a lobby below to get started.</p>
+
+<button (click)="createLobby()">Create a Lobby</button>
+
+<form (ngSubmit)="joinLobby()">
+    <input type="text" name="lobbyId" [(ngModel)]="lobbyId" />
+    <button type="submit">Join</button>
+</form>
+
+<p>
+Lobby ID: {{ lobbyId }}
+</p>

@@ -1,0 +1,24 @@
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 50vmin;
+    margin: 1rem auto;
+    width: 50vmin;
+
+    .square {
+        background: none;
+        border: none;
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+    }
+
+    .square:nth-child(3n) {
+        border-right: none;
+    }
+
+    .square:nth-child(n + 7) {
+        border-bottom: none;
+    }
+}

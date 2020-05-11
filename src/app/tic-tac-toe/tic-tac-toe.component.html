@@ -1,0 +1,12 @@
+<h2>Tic Tac Toe</h2>
+
+<div class="status">
+    <p>Current Turn: {{ player }}</p>
+    <p>Winner: {{ winner }}</p>
+</div>
+
+<div class="board">
+    <button class="square" (click)="makeMove(i)" *ngFor="let square of board; index as i">
+        {{ square || ' ' }}
+    </button>
+</div>
